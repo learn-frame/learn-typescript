@@ -59,7 +59,7 @@ render({
 // 2. 类型断言的第二种方式
 // 不过还是第一种更常用
 render(<IProjectResult>{
-  success: true,˜
+  success: true,
   data: [
     { _id: 0, projectName: 'blog cms v1', projectUrl: 'https://yanceyleo.com' },
     { _id: 1, projectName: 'blog cms v2' },
