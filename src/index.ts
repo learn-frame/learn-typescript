@@ -1,3 +1,5 @@
+
+
 const str: string = 'Hello TypeScript'
 
 const appDOM = document.querySelector('#app')
