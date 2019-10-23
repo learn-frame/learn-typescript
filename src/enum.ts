@@ -35,3 +35,16 @@ enum Message {
   Success = 'やったー',
   Fail = 'しっぱい',
 }
+
+enum Week {
+  Monday = 1,
+  Tuesday = 2,
+  Wednesday = 3,
+  Thursday = 4,
+  Friday = 5,
+  Saturday = 6,
+  Sunday = 7,
+}
+
+const monday = Week[Week.Monday]
+console.log(monday)
