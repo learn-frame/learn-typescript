@@ -30,7 +30,7 @@ const result1 = {
 // 但当一个函数的参数指定了接口
 // 只需要接口是参数的子集即可
 const render = (result: IProjectResult) =>
-  result.data.map(v => v._id + ' ' + v.projectName + ' ' + v.code  )
+  result.data.map(v => v._id + ' ' + v.projectName + ' ' + v.code)
 
 // 下面两个都可以执行
 // 此之谓鸭子类型也
@@ -38,13 +38,13 @@ console.log(render(result))
 console.log(render(result1))
 
 // 但是你直接把对象实体当作参数就会报错
-render({
-  success: true,
-  data: [
-    { _id: 0, projectName: 'blog cms v1', projectUrl: 'https://yanceyleo.com' },
-    { _id: 1, projectName: 'blog cms v2' },
-  ],
-})
+// render({
+//   success: true,
+//   data: [
+//     { _id: 0, projectName: 'blog cms v1', projectUrl: 'https://yanceyleo.com' },
+//     { _id: 1, projectName: 'blog cms v2' },
+//   ],
+// })
 
 // 因此除了上面将对象赋值给一个变量，触发鸭子鸭子类型，也可以使用「类型断言」
 // 1. 第一种类型断言
