@@ -72,3 +72,5 @@ interface IResult {
   name: string
   [key: string]: any
 }
+
+// 数字索引签名可以对应一个数组
