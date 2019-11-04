@@ -51,7 +51,7 @@ const monday = Week[Week.Monday]
 console.log(monday)
 
 // 枚举成员的性质
-enum Type {
+enum Typess {
   // 常量枚举成员，在编译阶段就被计算了
   a,
   b = Week.Thursday,
@@ -63,16 +63,16 @@ enum Type {
 
 /*
  * "use strict";
- * var Type;
- * (function (Type) {
+ * var Types;
+ * (function (Types) {
  *     // 常量枚举成员，在编译阶段就被计算了
- *     Type[Type["a"] = 0] = "a";
- *     Type[Type["b"] = Week.Thursday] = "b";
- *     Type[Type["c"] = 2] = "c";
+ *     Types[Types["a"] = 0] = "a";
+ *     Types[Types["b"] = Week.Thursday] = "b";
+ *     Types[Types["c"] = 2] = "c";
  *     // 可计算的枚举成员，需要等到执行阶段
- *     Type[Type["d"] = Math.random()] = "d";
- *     Type[Type["e"] = 'abc'.length] = "e";
- * })(Type || (Type = {}));
+ *     Types[Types["d"] = Math.random()] = "d";
+ *     Types[Types["e"] = 'abc'.length] = "e";
+ * })(Types || (Types = {}));
  */
 
 // 常量枚举会在编译阶段被移除
