@@ -8,6 +8,8 @@ function getLength<T extends ILength>(value: T) {
   return value.length
 }
 
+const getLength1 = <T extends ILength>(value: T) => value.length
+
 getLength([])
 getLength('abc')
 getLength({

@@ -1,18 +1,7 @@
-interface DogInterface {
-  run(): void
-}
+import { CatInterface, DogInterface } from './intersectionTypes'
 
-interface CatInterface {
-  jump(): void
-}
+// 联合类型：只要符合所有类型中的一种即可
 
-// 交叉类型：必须符合所有类型
-const pet: DogInterface & CatInterface = {
-  run() {},
-  jump() {},
-}
-
-// 联合类型：只要符合一种即可
 let strOrNum: string | number = 1
 let strOrNum1: 'a' | 'b' | 1 | 2 = 'a'
 
