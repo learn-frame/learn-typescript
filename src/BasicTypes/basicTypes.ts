@@ -33,4 +33,3 @@ const endless = (): never => {
     // do something...
   }
 }
-
