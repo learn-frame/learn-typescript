@@ -11,7 +11,7 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 ## Menus
 
-- [基本类型]('./src/BasicTypes')
+- [基本类型](./src/BasicTypes)
 
 ## License
 
