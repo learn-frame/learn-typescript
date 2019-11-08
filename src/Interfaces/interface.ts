@@ -1,5 +1,5 @@
 interface IProject {
-  _id: number
+  readonly _id: number
   projectName: string
   code?: number
 }

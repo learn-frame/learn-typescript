@@ -1,6 +1,12 @@
-# learn-typescript
+# Learn TypeScript
 
 Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/).
+
+## Menus
+
+- [基本类型](./src/BasicTypes)
+
+- [接口](./src/Interfaces)
 
 ## Notes
 
@@ -8,10 +14,6 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 静态类型语言：在**编译**阶段确定所有变量的类型
 动态类型语言：在**执行**阶段确定所有变量的类型
-
-## Menus
-
-- [基本类型](./src/BasicTypes)
 
 ## License
 

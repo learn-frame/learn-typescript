@@ -108,3 +108,33 @@ function bar(): never {
 const obj: object = {}
 const obj1: object = '' // Type '""' is not assignable to type 'object'
 ```
+
+## 类型断言
+
+```ts
+interface StringIndex<T> {
+  [index: string]: T
+}
+
+interface IBanner {
+  id: string
+  bannerName: string
+}
+
+interface IStore {
+  allBannerIds: string[]
+  bannerById: StringIndex<IBanner>
+}
+
+// 方式一 <T>{}
+let banners = <IStore>{
+  allBannerIds: [],
+  bannerById: {},
+}
+
+// 方式二 {} as T
+let bannerss = {
+  allBannerIds: [],
+  bannerById: {},
+} as IStore
+```
