@@ -5,7 +5,7 @@
  */
 let string: string = 'abc'
 
-// 将 "strictNullChecks": true 时下面这句将不会报错
+// 将 "strictNullChecks": false 时下面这句将不会报错
 // string = null
 
 /*
@@ -23,7 +23,7 @@ interface Y extends X {
 let x: X = { a: 1, b: 2 }
 let y: Y = { a: 1, b: 2, c: 3 }
 
-x = y // 鸭子类型，X 是 Y 的 “子集”，故 y 可以赋值给 x
+x = y // X 是 Y 的 “子集”，故 y 可以赋值给 x
 // y = x 报错
 
 /*
@@ -176,7 +176,7 @@ let o2: Empty<string> = { foo: () => {} }
 o1 = o2 // ✔️
 o2 = o1 // ✔️
 
-// // 当泛型接口中的属性使用到 T 时，两个对象不会兼容
+// 当泛型接口中的属性使用到 T 时，两个对象不会兼容
 interface IEmpty<T> {
   value: T
 }
