@@ -8,6 +8,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [接口](./src/Interfaces)
 
+- [类](./src/Class)
+
 ## Notes
 
 ### 静态语言和动态语言
