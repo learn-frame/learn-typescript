@@ -30,8 +30,6 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 动态类型语言：在**执行**阶段确定所有变量的类型
 
-## New Features
-
 ### globalThis
 
 TypeScript v3.4 增加了 **globalThis**, 它用于判断一个变量是否为全局变量
