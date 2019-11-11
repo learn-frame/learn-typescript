@@ -18,6 +18,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [类型兼容性](./src/TypeCompatibility)
 
+- [类型守卫](./src/TypeGuards)
+
 ## Notes
 
 ### 静态语言和动态语言
