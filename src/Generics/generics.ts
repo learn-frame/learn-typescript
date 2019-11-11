@@ -25,7 +25,7 @@ interface IRes<T> {
 
 type Foo = <T>(arg: T) => number
 
-function Bar<T>(arg: T): T {
+function Bar<T>(arg: T): any {
   return arg
 }
 
