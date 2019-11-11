@@ -8,7 +8,13 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [接口](./src/Interfaces)
 
-- [类](./src/Class)
+- [函数](./src/Functions)
+
+- [类](./src/Classes)
+
+- [泛型](./src/Generics)
+
+- [枚举](./src/Enums)
 
 - [类型兼容性](./src/TypeCompatibility)
 
