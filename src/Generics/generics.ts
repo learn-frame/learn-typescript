@@ -20,10 +20,19 @@ interface IRes<T> {
   success: boolean
   code: number
   data: T
+  <K>(arg: K): K
 }
 
-function identity<T>(arg: T): T {
+type Foo = <T>(arg: T) => number
+
+function Bar<T>(arg: T): T {
   return arg
 }
 
-identity('')
+const Foo = <T>(arg: T): T => arg
+
+const myIdentity: { <T>(arg: T): T } = function<T>(arg: T): T {
+  return arg
+}
+
+const myIdentities: { <T>(arg: T): T } = <T>(arg: T): T => arg
