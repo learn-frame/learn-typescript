@@ -20,6 +20,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [类型守卫](./src/TypeGuards)
 
+- [高级类型](./src/AdvancedTypes)
+
 ## Notes
 
 ### 静态语言和动态语言
