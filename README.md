@@ -10,6 +10,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [类](./src/Class)
 
+- [类型兼容性](./src/TypeCompatibility)
+
 ## Notes
 
 ### 静态语言和动态语言
