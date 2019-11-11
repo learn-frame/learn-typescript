@@ -21,3 +21,9 @@ interface IRes<T> {
   code: number
   data: T
 }
+
+function identity<T>(arg: T): T {
+  return arg
+}
+
+identity('')
