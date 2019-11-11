@@ -1,3 +1,5 @@
+import { globalAgent } from "http"
+
 // 引子
 const o = {
   a: 1,

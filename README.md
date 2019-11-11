@@ -30,6 +30,20 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 动态类型语言：在**执行**阶段确定所有变量的类型
 
+## New Features
+
+### globalThis
+
+TypeScript v3.4 增加了 globalThis, 它用于判断一个变量是否为全局变量
+
+```ts
+var name = 'yancey'
+globalThis.name
+
+const age = 18
+globalThis.age // 报错
+```
+
 ## License
 
 Learn Typescript is licensed under the terms of the [MIT licensed](https://opensource.org/licenses/MIT).
