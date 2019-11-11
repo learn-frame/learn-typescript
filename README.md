@@ -34,7 +34,7 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 ### globalThis
 
-TypeScript v3.4 增加了 globalThis, 它用于判断一个变量是否为全局变量
+TypeScript v3.4 增加了 **globalThis**, 它用于判断一个变量是否为全局变量
 
 ```ts
 var name = 'yancey'
