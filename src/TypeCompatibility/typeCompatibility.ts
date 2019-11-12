@@ -74,7 +74,7 @@ let p2d = (p: Point2D) => {}
 
 // 3) 返回值类型的兼容
 let foo = () => ({
-  name: 'yancey',
+  name: 'sayaka',
 })
 
 let bar = () => ({

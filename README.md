@@ -6,6 +6,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [基本类型](./src/BasicTypes)
 
+- [枚举](./src/Enum)
+
 - [接口](./src/Interfaces)
 
 ## Notes
