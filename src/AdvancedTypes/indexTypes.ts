@@ -1,3 +1,5 @@
+import { globalAgent } from 'http'
+
 // 引子
 const o = {
   a: 1,
@@ -21,6 +23,8 @@ interface Obj {
   b: boolean
 }
 
-const key: keyof Obj = ''
+const key: keyof Obj = {
+  a: '',
+}
 
 // 索引类型的访问操作符 T[K]
