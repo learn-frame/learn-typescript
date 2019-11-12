@@ -39,11 +39,11 @@ type PickMapItem = Pick<IMapItem, 'latitude' | 'longitude'>
 // -----------------------
 
 /*
- * Pick<T> 抽取 T 的某些属性 K, 并组成新的类型，它是非同态的
+ * Record<T> 将指定属性的类型设置为 T
  */
 
 // 实现原理
 // type Record<K extends keyof any, T> = {
 //     [P in K]: T;
 // };
-type RecordMapItem = Record<'positionGroup', IMapItem>
+type RecordMapItem = Record<'positionGroup' | 'positionMeta', IMapItem>
