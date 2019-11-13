@@ -1,5 +1,5 @@
 interface IMapItem {
-  name: string
+  name?: string
   latitude: number
   longitude: number
 }
@@ -15,6 +15,16 @@ interface IMapItem {
 type ReadonlyMapItem = Readonly<IMapItem>
 
 /*
+ * Required<T> 将所有属性设为必选
+ */
+
+// 实现原理
+// type Required<T> = {
+//   [P in keyof T]-?: T[P];
+// };
+type RequiredMapItem = Required<IMapItem>
+
+/*
  * Partial<T> 将所有属性设为可选
  */
 
@@ -25,7 +35,7 @@ type ReadonlyMapItem = Readonly<IMapItem>
 type PartialMapItem = Partial<IMapItem>
 
 /*
- * Pick<T> 抽取 T 的某些属性 K, 并组成新的类型
+ * Pick<T, K extends keyof T> 抽取 T 的某些属性 K, 并组成新的类型
  */
 
 // 实现原理
@@ -39,11 +49,11 @@ type PickMapItem = Pick<IMapItem, 'latitude' | 'longitude'>
 // -----------------------
 
 /*
- * Record<T> 将指定属性的类型设置为 T
+ * Record<K extends keyof any, T> 将指定属性的类型设置为 T
  */
 
 // 实现原理
-// type Record<K extends keyof any, T> = {
+// type Record<T, K extends keyof T> = {
 //     [P in K]: T;
 // };
 type RecordMapItem = Record<'positionGroup' | 'positionMeta', IMapItem>
