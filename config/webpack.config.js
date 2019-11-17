@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const env = process.env.NODE_ENV
-const isEnvProduction = env === 'production'
 const isEnvDevelopment = env === 'development'
 
 module.exports = {
@@ -27,7 +26,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    // isEnvProduction && new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
