@@ -6,7 +6,7 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [基本类型](./src/BasicTypes)
 
-- [枚举](./src/Enum)
+- [枚举](./src/Enums)
 
 - [接口](./src/Interfaces)
 
@@ -23,6 +23,10 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 - [类型守卫](./src/TypeGuards)
 
 - [高级类型](./src/AdvancedTypes)
+
+- [模块](./src/Modules)
+
+- [命名空间](./src/Namespaces)
 
 ## Notes
 
