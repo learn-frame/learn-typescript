@@ -44,7 +44,7 @@ const tuple: [number, string] = [1, '1']
 tuple[2] // TS2493: Tuple type '[number, string]' of length '2' has no element at index '2'.
 ```
 
-## [Enum](../EnumTypes)
+## [Enum](../Enums)
 
 [枚举](../EnumTypes)放到单独一章.
 
