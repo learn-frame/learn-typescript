@@ -28,6 +28,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [命名空间](./src/Namespaces)
 
+- [声明合并](./src/DeclarationMerging)
+
 ## Notes
 
 ### 静态语言和动态语言
