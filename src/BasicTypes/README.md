@@ -46,7 +46,7 @@ tuple[2] // TS2493: Tuple type '[number, string]' of length '2' has no element a
 
 ## [Enum](../Enums)
 
-[枚举](../EnumTypes)放到单独一章.
+[枚举](../Enums)放到单独一章.
 
 ## Any
 
