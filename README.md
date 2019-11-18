@@ -30,6 +30,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [声明合并](./src/DeclarationMerging)
 
+- [声明文件](./src/DeclarationFiles)
+
 ## Articles
 
 - [动态语言和静态语言](./docs/concept.md)
