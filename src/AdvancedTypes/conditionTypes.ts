@@ -61,7 +61,7 @@ type T5 = NonNullable<string | number | null | undefined>
 const t5: T5 = 'a'
 
 /*
- * type Extract<T, U> 获取返回值类型
+ * type ReturnType<T, U> 获取返回值类型
  */
 
 // 实现原理

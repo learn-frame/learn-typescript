@@ -28,7 +28,11 @@
 
 ## 条件类型
 
-// TODO
+- `Exclude<T, U>`: 排除 T 存在于 U 的类型的联合类型
+
+- `Extract<T, U>`: 获取 T 和 U 公用类型的联合类型
+
+- `NonNullable<T>`: 排除类型 T 里的 null / undefined 的类型的联合类型
 
 ## 扩展
 

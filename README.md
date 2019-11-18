@@ -30,25 +30,15 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [声明合并](./src/DeclarationMerging)
 
-## Notes
+## Articles
 
-### 静态语言和动态语言
+- [动态语言和静态语言](./docs/concept.md)
 
-静态类型语言：在**编译**阶段确定所有变量的类型
+- [小谈 type 和 interface 的异同](./docs/typeAndInterface.md)
 
-动态类型语言：在**执行**阶段确定所有变量的类型
+- [TypeScript v3.7 新特性一览](./docs/v3.7.md)
 
-### globalThis
-
-TypeScript v3.4 增加了 **globalThis**, 它用于判断一个变量是否为全局变量
-
-```ts
-var name = 'yancey'
-globalThis.name
-
-const age = 18
-globalThis.age // 报错
-```
+- [TypeScript 高级类型详解](./docs/advancedType.md)
 
 ## License
 
