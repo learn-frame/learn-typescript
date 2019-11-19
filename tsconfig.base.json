@@ -11,7 +11,5 @@
     // "./src/**/*"                 // 递归编译 src 下的所有 ts 文件
   ],
   // 排除指定的目录或 ts 文件
-  "exclude": [
-    "./src/Classes/Animal.ts"
-  ]
+  "exclude": ["./src/Classes/Animal.ts"]
 }
