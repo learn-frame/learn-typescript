@@ -75,7 +75,7 @@ function t6() {
 }
 type T6 = ReturnType<typeof t6>
 
-const t7 = () => string
-type T7 = ReturnType<typeof t7>
+type t7 = () => string
+type T7 = ReturnType<t7>
 
 type T8 = ReturnType<() => number>

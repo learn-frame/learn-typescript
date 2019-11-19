@@ -3,6 +3,8 @@ declare namespace umdModule {
   function doSomething(): void
 }
 
+// @ts-ignore
 export as namespace umdLib
 
+// @ts-ignore
 export = umdLib

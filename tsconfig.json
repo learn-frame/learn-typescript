@@ -1,8 +1,9 @@
 {
+  "extends": "./tsconfig.base",
   "compilerOptions": {
     /* Basic Options */
     "incremental": true                       /* Enable incremental compilation */,
-    "target": "ES2017"                        /* 指定 ECMAScript 的编译目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
+    "target": "ES5"                           /* 指定 ECMAScript 的编译目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
     "module": "commonjs"                      /* 指定编译的模块系统: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
     // "lib": [],                             /* Specify library files to be included in the compilation. */
     "allowJs": true                           /* Allow javascript files to be compiled. */,
