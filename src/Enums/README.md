@@ -27,18 +27,31 @@ enum Message {
 ## 枚举的反向引用
 
 ```ts
-enum Week {
-  Monday = 1,
-  Tuesday = 2,
-  Wednesday = 3,
-  Thursday = 4,
-  Friday = 5,
-  Saturday = 6,
-  Sunday = 7,
+enum Color {
+  Green,
+  Yellow,
+  Blue = 'blue',
 }
 
-// 反向引用
-const monday = Week[Week.Monday]
+// 上面的枚举会被编译成如下的立即执行函数
+'use strict'
+var Color
+;(function(Color) {
+  Color[(Color['Green'] = 0)] = 'Green'
+  Color[(Color['Yellow'] = 1)] = 'Yellow'
+  Color['Blue'] = 'blue'
+})(Color || (Color = {}))
+
+// 该函数的返回值为一个对象
+Color: {0: "Green", 1: "Yellow", Green: 0, Yellow: 1, Blue: "blue"}
+```
+
+通过上面的例子可以看出, 枚举本质就是一个对象, 因此它可以使用所有的 [Object 的方法](https://js.yanceyleo.com/ES/Object/hasOwnProperty/),
+**并且对于属性值是数字的属性, 它可以使用反向引用!!!**
+
+```ts
+Week[Week.Monday] // 'Monday'
+Week[1] // 'Monday'
 ```
 
 ## 可计算的枚举
@@ -53,6 +66,20 @@ enum Type {
   d = Math.random(),
   e = 'abc'.length,
 }
+
+// 如上被编译成
+
+'use strict'
+var Types
+;(function(Types) {
+  // 常量枚举成员, 在编译阶段就被计算了
+  Types[(Types['a'] = 0)] = 'a'
+  Types[(Types['b'] = Week.Thursday)] = 'b'
+  Types[(Types['c'] = 2)] = 'c'
+  // 可计算的枚举成员, 需要等到执行阶段
+  Types[(Types['d'] = Math.random())] = 'd'
+  Types[(Types['e'] = 'abc'.length)] = 'e'
+})(Types || (Types = {}))
 ```
 
 ## 常量枚举

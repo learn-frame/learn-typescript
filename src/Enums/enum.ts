@@ -48,7 +48,8 @@ enum Week {
 
 // 反向引用
 const monday = Week[Week.Monday]
-console.log(monday)
+console.log(monday) // 'Monday'
+console.log(Week[1]) // 'Monday'
 
 // 枚举成员的性质
 enum Typess {
