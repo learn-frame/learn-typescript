@@ -13,7 +13,8 @@
   // 排除指定的目录或 ts 文件
   // 默认会排除 node_modules 和自定义的 xxx.d.ts
   "exclude": [
-    "./src/Classes/Fuck.ts"
+    "./src/__test__/**/*"
+    // "./src/Classes/Fuck.ts"
     // "./src/Classes/Animal.ts" // 虽然该文件被排除了, 但它被其他模块引用过, 因此仍然会被编译
   ]
 }
