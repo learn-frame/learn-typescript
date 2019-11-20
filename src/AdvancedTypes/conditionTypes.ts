@@ -1,5 +1,3 @@
-import { type } from 'os'
-
 /*
  * 条件类型 T extends U ? X : Y
  */

@@ -1,0 +1,70 @@
+{
+  "bundle": {
+    "commonSourceDirectory": "/Users/yanceyleo/Coding/Learning/learn-typescript/",
+    "sourceFiles": [
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/index.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/AdvancedTypes/indexTypes.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/AdvancedTypes/mapTypes.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/BasicTypes/basicTypes.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Classes/WorkFlow.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/DeclarationFiles/global-lib.js",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/DeclarationFiles/module-lib.js",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/DeclarationFiles/umd-lib.js",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/DeclarationMerging/declarationMerging.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Enums/enum.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Functions/functions.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Generics/generics.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Interfaces/interface.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Namespaces/A.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Namespaces/B.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Namespaces/C.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/Namespaces/sample.js",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/TypeCompatibility/typeCompatibility.ts",
+      "/Users/yanceyleo/Coding/Learning/learn-typescript/src/TypeGuards/typeGuards .ts"
+    ],
+    "js": {
+      "sections": [
+        {
+          "pos": 0,
+          "end": 13,
+          "kind": "prologue",
+          "data": "use strict"
+        },
+        {
+          "pos": 14,
+          "end": 599,
+          "kind": "emitHelpers",
+          "data": "typescript:extends"
+        },
+        {
+          "pos": 600,
+          "end": 14406,
+          "kind": "text"
+        }
+      ],
+      "sources": {
+        "prologues": [
+          {
+            "file": 0,
+            "text": "",
+            "directives": [
+              {
+                "pos": -1,
+                "end": -1,
+                "expression": {
+                  "pos": -1,
+                  "end": -1,
+                  "text": "use strict"
+                }
+              }
+            ]
+          }
+        ],
+        "helpers": [
+          "typescript:extends"
+        ]
+      }
+    }
+  },
+  "version": "3.5.3"
+}

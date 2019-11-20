@@ -42,6 +42,8 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [TypeScript 高级类型详解](./docs/advancedType.md)
 
+- [tsconfig.json 配置一览](./docs/tsconfig.md)
+
 ## License
 
 Learn Typescript is licensed under the terms of the [MIT licensed](https://opensource.org/licenses/MIT).

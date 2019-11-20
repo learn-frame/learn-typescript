@@ -1,10 +1,14 @@
 {
   "extends": "./tsconfig.base",
   "compilerOptions": {
-    /* Basic Options */
-    // "incremental": true                    /* Enable incremental compilation */,
+    "incremental": true                       /* 开启增量编译, 这是 v3.4 新增属性, 在编译过程中会生成一个 tsconfig.tsbuildinfo 的缓存文件, 它会存储在 outDir 配置的路径下, 用于提升下次编译的编译速度 */,
+    // "tsBuildInfoFile": "./.cache"          /* 指定增量编译生成缓存文件的位置和名称 */,
+    "diagnostics":true                        /* 将编译的诊断信息打印在终端 */,
+
     "target": "ES5"                           /* 指定 ECMAScript 的编译目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
     "module": "commonjs"                      /* 指定编译的模块系统: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    // "outFile": "./app.js",                 /* 将多个互相依赖的模块合并到一个文件, 注意当 outFile 开启时, module 只能选择 none, amd, system */
+
     // "lib": [],                             /* Specify library files to be included in the compilation. */
     "allowJs": true                           /* Allow javascript files to be compiled. */,
     // "checkJs": true,                       /* Report errors in .js files. */
@@ -12,11 +16,11 @@
     // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
     // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
-    // "outFile": "./",                       /* Concatenate and emit output to single file. */
+   
     "outDir": "./dist/"                       /* Redirect output structure to the directory. */,
     "rootDir": "./"                           /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
     // "composite": true,                     /* Enable project compilation */
-    // "tsBuildInfoFile": "./"                /* Specify file to store incremental compilation information */,
+
     // "removeComments": true,                /* Do not emit comments to output. */
     // "noEmit": true,                        /* Do not emit outputs. */
     // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
