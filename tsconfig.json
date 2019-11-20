@@ -7,7 +7,7 @@
 
     "target": "ES5"                           /* 指定 ECMAScript 的编译目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */,
     "module": "commonjs"                      /* 指定编译的模块系统: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
-    // "outFile": "./app.js",                 /* 将多个互相依赖的模块合并到一个文件, 注意当 outFile 开启时, module 只能选择 none, amd, system */
+    // "outFile": "./app.js",                 /* 将多个互相依赖的模块合并到一个文件, 常用于声称 AMD 模块, 注意当 outFile 开启时, module 只能选择 none, amd, system */
 
     // "lib": [],                             /* Specify library files to be included in the compilation. */
     "allowJs": true                           /* Allow javascript files to be compiled. */,
@@ -34,7 +34,7 @@
     // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
     // "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
     // "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
-    "noImplicitThis": true                    /* Raise error on 'this' expressions with an implied 'any' type. */,
+    // "noImplicitThis": true                 /* Raise error on 'this' expressions with an implied 'any' type. */,
     // "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
 
     /* Additional Checks */

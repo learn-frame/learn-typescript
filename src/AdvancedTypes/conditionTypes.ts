@@ -59,21 +59,22 @@ type T5 = NonNullable<string | number | null | undefined>
 const t5: T5 = 'a'
 
 /*
- * type ReturnType<T, U> 获取返回值类型
+ * type Omit<T, K extends keyof any>
  */
 
 // 实现原理
-// type ReturnType<T extends (...args: any) => any> = T extends (...args: any) => infer R ? R : any;
+// type Omit<T, K extends keyof any> = Pick<T, Exclude<keyof T, K>>;
 
-function t6() {
-  return {
-    id: 1,
-    name: 'yancey',
-  }
+interface XXXX {
+  id: number
+  name: string
+  age: number
 }
-type T6 = ReturnType<typeof t6>
 
-type t7 = () => string
-type T7 = ReturnType<t7>
+interface YYYY {
+  id: number
+  hobbies: string[]
+}
 
-type T8 = ReturnType<() => number>
+type T6 = Omit<XXXX, keyof YYYY>
+type T66 = Omit<XXXX, 'id' | 'name'>
