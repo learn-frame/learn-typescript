@@ -24,7 +24,7 @@
     "outDir": "./dist/"                       /* 指定编译后文件的存放目录 */,
     "rootDir": "./src"                        /* 指定开始编译的根目录, 默认是项目的根目录. 假设设置为 ./src , 就不应该在 src 之外还有 ts 文件了  */,
 
-    // "composite": true,                     /* Enable project compilation */
+    // "composite": true,                     /* 给每个编译出来的 js 都附属一个声明文件 */
 
     // "removeComments": true,                /* Do not emit comments to output. */
     // "noEmit": true,                        /* Do not emit outputs. */
