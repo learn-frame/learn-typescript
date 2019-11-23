@@ -17,8 +17,9 @@
 
     "jsx": "preserve"                         /* 编译 tsx 文件. preserve 将 tsx 编译成 jsx; react 将 tsx 编译成 React.createElement 格式的 js 文件; react-native 类似于 preserve   */,
 
-    // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
-    // "declarationMap": true,                /* Generates a sourcemap for each corresponding '.d.ts' file. */
+    // "declaration": true,                   /* 生成声明文件 */
+    // "declarationMap": true,                /* 给每个声明文件生成 sourcemap */
+    
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
    
     "outDir": "./dist/"                       /* 指定编译后文件的存放目录 */,
