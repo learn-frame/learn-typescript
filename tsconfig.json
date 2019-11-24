@@ -19,7 +19,9 @@
 
     // "declaration": true,                   /* 生成声明文件 */
     // "declarationMap": true,                /* 给每个声明文件生成 sourcemap */
-    
+    // "declarationDir": "",                  /* 指定声明文件的路径 */
+    // "emitDeclarationOnly": true,           /* 只生成声明文件 */
+
     // "sourceMap": true,                     /* Generates corresponding '.map' file. */
    
     "outDir": "./dist/"                       /* 指定编译后文件的存放目录 */,
