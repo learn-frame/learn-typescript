@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const env = process.env.NODE_ENV
-const isEnvDevelopment = env === 'development'
+const isEnvDevelopment = process.env.NODE_ENV === 'development'
 
 module.exports = {
   entry: './src/index.ts',

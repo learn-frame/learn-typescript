@@ -1,24 +1,24 @@
 {
   "extends": "./tsconfig.base",
   "compilerOptions": {
-     /* 基本配置 */
+    /* 基本配置 */
     // "incremental": true                    /* 开启增量编译, 这是 v3.4 新增属性, 在编译过程中会生成一个 tsconfig.tsbuildinfo 的缓存文件, 它会存储在 outDir 配置的路径下, 用于提升下次编译的编译速度 */,
     // "tsBuildInfoFile": "./.cache"          /* 指定增量编译生成缓存文件的位置和名称 */,
     // "diagnostics":true                     /* 将编译的诊断信息打印在终端 */,
-    "target": "ES5"                           /* 指定 ECMAScript 的编译目标版本, 默认是 es3 */,
-    "module": "commonjs"                      /* 指定编译的模块系统 */,
+    "target": "ES5" /* 指定 ECMAScript 的编译目标版本, 默认是 es3 */,
+    "module": "commonjs" /* 指定编译的模块系统 */,
     // "outFile": "./app.js",                 /* 将多个互相依赖的模块合并到一个文件, 常用于声称 AMD 模块, 注意当 outFile 开启时, module 只能选择 none, amd, system */
     // "lib": ["esnext"],                     /* 指定 JavaScript 需要的类库, 比如 target 为 ES5 时, 它会默认引入 dom, es5, scripthost */
     // "allowJs": true                        /* 允许编译器编译 .js, .jsx 文件 */,
     // "checkJs": true,                       /* 报告编译 js 文件时的错误, 通常与 allowJs 一起使用 */
-    "jsx": "preserve"                         /* 编译 tsx 文件. preserve 将 tsx 编译成 jsx; react 将 tsx 编译成 React.createElement 格式的 js 文件; react-native 类似于 preserve   */,
+    "jsx": "preserve" /* 编译 tsx 文件. preserve 将 tsx 编译成 jsx; react 将 tsx 编译成 React.createElement 格式的 js 文件; react-native 类似于 preserve   */,
     // "declaration": true,                   /* 生成声明文件 */
     // "declarationDir": "",                  /* 指定声明文件的路径 */
     // "emitDeclarationOnly": true,           /* 只生成声明文件 */
     // "sourceMap": true,                     /* 生成 sourceMap 文件 */
-    // "declarationMap": true,                /* 给每个声明文件生成 sourceMap */   
-    "outDir": "./dist/"                       /* 指定编译后文件的存放目录 */,
-    "rootDir": "./src"                        /* 指定开始编译的根目录, 默认是项目的根目录. 假设设置为 ./src , 就不应该在 src 之外还有 ts 文件了  */,
+    // "declarationMap": true,                /* 给每个声明文件生成 sourceMap */
+    "outDir": "./dist/" /* 指定编译后文件的存放目录 */,
+    "rootDir": "./src" /* 指定开始编译的根目录, 默认是项目的根目录. 假设设置为 ./src , 就不应该在 src 之外还有 ts 文件了  */,
     // "composite": true,                     /* 工程可以被引用, 并支持增量编译 */
     // "removeComments": true,                /* 删除注释 */
     // "noEmit": true,                        /* 不做任何输出 (应该是编译了, 但不生成编译后的文件) */
@@ -28,7 +28,7 @@
     // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
 
     /* 严格类型检查选项 */
-    "strict": true                            /* 开启这个, 下面的都会变成 true */,
+    "strict": true /* 开启这个, 下面的都会变成 true */,
     // "noImplicitAny": true                  /* 不允许隐式的 any 类型 */,
     // "strictNullChecks": true,              /* 不允许把 null 和 undefined 赋值给其他类型的变量 */
     // "strictFunctionTypes": true,           /* 保证函数类型参数的检查是抗变(contravariantly)而非双变(bivariantly)的 */
@@ -51,8 +51,8 @@
     // "typeRoots": [],                       /* 指定声明文件文件夹的目录, 默认是 node_modules/@types */
     // "types": [],                           /* 指定声明文件的目录 */
     // "allowSyntheticDefaultImports": true,  /* 允许 export default 语法 */
-    "esModuleInterop": true                   /* 允许在 commonjs 里使用 ES6 的 import 语法 */,
-    "allowUmdGlobalAccess": true,             /* 允许从模块访问 UMD 全局变量 */
+    "esModuleInterop": true /* 允许在 commonjs 里使用 ES6 的 import 语法 */,
+    "allowUmdGlobalAccess": true /* 允许从模块访问 UMD 全局变量 */,
     // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
     // "listFiles": true,                     /* 将编译后的 js 文件列表和声明文件打印在终端 */
     // "listEmittedFiles": true,              /* 将被编译的 ts 文件列表打印在终端 */
@@ -64,7 +64,7 @@
     // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
 
     /* Experimental Options */
-    "experimentalDecorators": true            /* Enables experimental support for ES7 decorators. */,
-    "emitDecoratorMetadata": true             /* Enables experimental support for emitting type metadata for decorators. */
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "emitDecoratorMetadata": true /* Enables experimental support for emitting type metadata for decorators. */
   }
 }

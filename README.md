@@ -42,7 +42,7 @@ Learn TypeScript with GeekTime course and [TypeScript Deep Dive](https://basarat
 
 - [TypeScript 高级类型详解](./docs/advancedType.md)
 
-- [tsconfig.json 配置一览](./docs/tsconfig.md)
+- [工程引用](./docs/projectReferences.md)
 
 ## License
 
