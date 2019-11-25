@@ -1,72 +1,66 @@
 {
   "extends": "./tsconfig.base",
   "compilerOptions": {
+     /* 基本配置 */
     // "incremental": true                    /* 开启增量编译, 这是 v3.4 新增属性, 在编译过程中会生成一个 tsconfig.tsbuildinfo 的缓存文件, 它会存储在 outDir 配置的路径下, 用于提升下次编译的编译速度 */,
     // "tsBuildInfoFile": "./.cache"          /* 指定增量编译生成缓存文件的位置和名称 */,
-
     // "diagnostics":true                     /* 将编译的诊断信息打印在终端 */,
-
     "target": "ES5"                           /* 指定 ECMAScript 的编译目标版本, 默认是 es3 */,
     "module": "commonjs"                      /* 指定编译的模块系统 */,
     // "outFile": "./app.js",                 /* 将多个互相依赖的模块合并到一个文件, 常用于声称 AMD 模块, 注意当 outFile 开启时, module 只能选择 none, amd, system */
-
     // "lib": ["esnext"],                     /* 指定 JavaScript 需要的类库, 比如 target 为 ES5 时, 它会默认引入 dom, es5, scripthost */
-
     // "allowJs": true                        /* 允许编译器编译 .js, .jsx 文件 */,
     // "checkJs": true,                       /* 报告编译 js 文件时的错误, 通常与 allowJs 一起使用 */
-
     "jsx": "preserve"                         /* 编译 tsx 文件. preserve 将 tsx 编译成 jsx; react 将 tsx 编译成 React.createElement 格式的 js 文件; react-native 类似于 preserve   */,
-
     // "declaration": true,                   /* 生成声明文件 */
-    // "declarationMap": true,                /* 给每个声明文件生成 sourcemap */
     // "declarationDir": "",                  /* 指定声明文件的路径 */
     // "emitDeclarationOnly": true,           /* 只生成声明文件 */
-
-    // "sourceMap": true,                     /* Generates corresponding '.map' file. */
-   
+    // "sourceMap": true,                     /* 生成 sourceMap 文件 */
+    // "declarationMap": true,                /* 给每个声明文件生成 sourceMap */   
     "outDir": "./dist/"                       /* 指定编译后文件的存放目录 */,
     "rootDir": "./src"                        /* 指定开始编译的根目录, 默认是项目的根目录. 假设设置为 ./src , 就不应该在 src 之外还有 ts 文件了  */,
-
-    // "composite": true,                     /* 给每个编译出来的 js 都附属一个声明文件 */
-
-    // "removeComments": true,                /* Do not emit comments to output. */
-    // "noEmit": true,                        /* Do not emit outputs. */
-    // "importHelpers": true,                 /* Import emit helpers from 'tslib'. */
-    // "downlevelIteration": true,            /* Provide full support for iterables in 'for-of', spread, and destructuring when targeting 'ES5' or 'ES3'. */
+    // "composite": true,                     /* 工程可以被引用, 并支持增量编译 */
+    // "removeComments": true,                /* 删除注释 */
+    // "noEmit": true,                        /* 不做任何输出 (应该是编译了, 但不生成编译后的文件) */
+    // "noEmitOnError": true,                 /* 编译出错时不做任何输出 */
+    // "importHelpers": true,                 /* 不开启这个属性就会将 helper 直接输出到 js 文件中, 可以通过导入 tslib 的方式减少 helper 代码 */
+    // "downlevelIteration": true,            /* 给迭代器编译降级, 如 [...[1, 2, 3], 1], 开启这个选项则会使用 helper, 否则会被编译成 [1, 2, 3].concat(1) */
     // "isolatedModules": true,               /* Transpile each file as a separate module (similar to 'ts.transpileModule'). */
 
-    /* Strict Type-Checking Options */
-    "strict": true                            /* Enable all strict type-checking options. */,
-    "noImplicitAny": true                     /* Raise error on expressions and declarations with an implied 'any' type. */,
-    // "strictNullChecks": true,              /* Enable strict null checks. */
-    // "strictFunctionTypes": true,           /* Enable strict checking of function types. */
-    // "strictBindCallApply": true,           /* Enable strict 'bind', 'call', and 'apply' methods on functions. */
-    // "strictPropertyInitialization": true,  /* Enable strict checking of property initialization in classes. */
-    // "noImplicitThis": true                 /* Raise error on 'this' expressions with an implied 'any' type. */,
-    // "alwaysStrict": true,                  /* Parse in strict mode and emit "use strict" for each source file. */
+    /* 严格类型检查选项 */
+    "strict": true                            /* 开启这个, 下面的都会变成 true */,
+    // "noImplicitAny": true                  /* 不允许隐式的 any 类型 */,
+    // "strictNullChecks": true,              /* 不允许把 null 和 undefined 赋值给其他类型的变量 */
+    // "strictFunctionTypes": true,           /* 保证函数类型参数的检查是抗变(contravariantly)而非双变(bivariantly)的 */
+    // "strictBindCallApply": true,           /* 保证严格的 'bind', 'call', and 'apply' 检查 */
+    // "strictPropertyInitialization": true,  /* 类的实例必须初始化 */
+    // "noImplicitThis": true                 /* 不允许 this 有隐式的 any 类型 */,
+    // "alwaysStrict": true,                  /* 在代码中注入 "use strict" */
 
-    /* Additional Checks */
-    // "noUnusedLocals": true,                /* Report errors on unused locals. */
-    // "noUnusedParameters": true,            /* Report errors on unused parameters. */
-    // "noImplicitReturns": true,             /* Report error when not all code paths in function return a value. */
-    // "noFallthroughCasesInSwitch": true,    /* Report errors for fallthrough cases in switch statement. */
+    /* 附加的类型检查选项, 只会提出错误, 不会影响编译 */
+    // "noUnusedLocals": true,                /* 检查只声明但未使用的局部变量 */
+    // "noUnusedParameters": true,            /* 检查未使用的参数 */
+    // "noImplicitReturns": true,             /* 保证每个条件分支都有返回值 */
+    // "noFallthroughCasesInSwitch": true,    /* 防止 witch 语句贯穿 */
 
     /* Module Resolution Options */
-    // "moduleResolution": "node",            /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
-    // "baseUrl": "./",                       /* Base directory to resolve non-absolute module names. */
-    // "paths": {},                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
-    // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
-    // "typeRoots": [],                       /* List of folders to include type definitions from. */
-    // "types": [],                           /* Type declaration files to be included in compilation. */
-    // "allowSyntheticDefaultImports": true,  /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */
-    "esModuleInterop": true                   /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    // "moduleResolution": "node",            /* 指定模块的解析策略, 默认是 node.js, 还有一种是 classic */
+    // "baseUrl": "./",                       /* 解析非相对模块的基地址 */
+    // "paths": {},                           /* 指定导入文件的路径, 它相对与 baseUrl, 比如默认 import 的是 node_modules/jquery/dist/jquery.min.js, 在这可以改写成其他的, 如 jquery.slim.min.js */
+    // "rootDirs": ['src', 'out'],            /* 建立一个虚拟路径, 这样 src 和 out 就被认为处于同一文件夹下, 因此可以只跳一级引用 */
+    // "typeRoots": [],                       /* 指定声明文件文件夹的目录, 默认是 node_modules/@types */
+    // "types": [],                           /* 指定声明文件的目录 */
+    // "allowSyntheticDefaultImports": true,  /* 允许 export default 语法 */
+    "esModuleInterop": true                   /* 允许在 commonjs 里使用 ES6 的 import 语法 */,
+    "allowUmdGlobalAccess": true,             /* 允许从模块访问 UMD 全局变量 */
     // "preserveSymlinks": true,              /* Do not resolve the real path of symlinks. */
-    "allowUmdGlobalAccess": true,             /* 允许从模块访问UMD全局变量 */
+    // "listFiles": true,                     /* 将编译后的 js 文件列表和声明文件打印在终端 */
+    // "listEmittedFiles": true,              /* 将被编译的 ts 文件列表打印在终端 */
 
     /* Source Map Options */
     // "sourceRoot": "",                      /* Specify the location where debugger should locate TypeScript files instead of source locations. */
     // "mapRoot": "",                         /* Specify the location where debugger should locate map files instead of generated locations. */
-    // "inlineSourceMap": true,               /* Emit a single file with source maps instead of having a separate file. */
+    // "inlineSourceMap": true,               /* 生成内联的 sourceMap */
     // "inlineSources": true,                 /* Emit the source alongside the sourcemaps within a single file; requires '--inlineSourceMap' or '--sourceMap' to be set. */
 
     /* Experimental Options */
