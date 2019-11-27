@@ -21,7 +21,7 @@
     "rootDir": "./src"                        /* 指定开始编译的根目录, 默认是项目的根目录. 假设设置为 ./src , 就不应该在 src 之外还有 ts 文件了  */,
     // "composite": true,                     /* 工程可以被引用, 并支持增量编译 */
     // "removeComments": true,                /* 删除注释 */
-    // "noEmit": true,                        /* 不做任何输出 (应该是编译了, 但不生成编译后的文件) */
+    // "noEmit": true,                        /* 不做任何输出 */
     // "noEmitOnError": true,                 /* 编译出错时不做任何输出 */
     // "importHelpers": true,                 /* 不开启这个属性就会将 helper 直接输出到 js 文件中, 可以通过导入 tslib 的方式减少 helper 代码 */
     // "downlevelIteration": true,            /* 给迭代器编译降级, 如 [...[1, 2, 3], 1], 开启这个选项则会使用 helper, 否则会被编译成 [1, 2, 3].concat(1) */

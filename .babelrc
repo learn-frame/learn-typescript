@@ -1,0 +1,15 @@
+// babel 在编译过程中不会进行类型检查
+// 可搭配 tsc --watch 辅助
+// 这种方式会使用 babel 编译, 而 tsc 只用来做类型检查
+// 故需要开启 noEmit: true 保证不会走 tsc 的编译
+
+{
+  "presets": ["@babel/preset-env", "@babel/preset-typescript"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread"
+  ]
+}
+
+// babel 暂时不支持:
+// 1. 命名空间; 2. 尖括号格式的类型断言; 3. 常量枚举; 4. export = xxx 的导出
