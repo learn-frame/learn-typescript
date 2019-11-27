@@ -11,7 +11,17 @@
     "lint": "eslint src --ext .js,.ts",
     "test": "jest"
   },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0"
+  },
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
     "@types/jquery": "^3.3.31",
     "@types/moment": "^2.13.0",
     "awesome-typescript-loader": "^5.2.1",
@@ -25,9 +35,5 @@
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0",
     "webpack-merge": "^4.2.2"
-  },
-  "dependencies": {
-    "jquery": "^3.4.1",
-    "moment": "^2.24.0"
   }
 }
