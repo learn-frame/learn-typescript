@@ -5,7 +5,7 @@ const { CheckerPlugin } = require('awesome-typescript-loader')
 const isEnvDevelopment = process.env.NODE_ENV === 'development'
 
 module.exports = {
-  entry: './src/index.ts',
+  entry: { app: './src/index.tsx' },
   output: {
     filename: '[name].[chunkhash:8].js',
   },

@@ -11,7 +11,7 @@
     // "lib": ["esnext"],                     /* 指定 JavaScript 需要的类库, 比如 target 为 ES5 时, 它会默认引入 dom, es5, scripthost */
     // "allowJs": true                        /* 允许编译器编译 .js, .jsx 文件 */,
     // "checkJs": true,                       /* 报告编译 js 文件时的错误, 通常与 allowJs 一起使用 */
-    "jsx": "preserve"                         /* 编译 tsx 文件. preserve 将 tsx 编译成 jsx; react 将 tsx 编译成 React.createElement 格式的 js 文件; react-native 类似于 preserve   */,
+    "jsx": "react"                         /* 编译 tsx 文件. preserve 将 tsx 编译成 jsx; react 将 tsx 编译成 React.createElement 格式的 js 文件; react-native 类似于 preserve   */,
     // "declaration": true,                   /* 生成声明文件 */
     // "declarationDir": "",                  /* 指定声明文件的路径 */
     // "emitDeclarationOnly": true,           /* 只生成声明文件 */
