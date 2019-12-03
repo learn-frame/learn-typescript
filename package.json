@@ -11,9 +11,11 @@
     "build:babel": "babel src --out-dir dist --extensions \".ts,.tsx\"",
     "ts-ckeck": "tsc --watch",
     "lint": "eslint src --ext .js,.ts",
-    "test": "jest"
+    "test": "jest",
+    "mock": "cd mock && hs -p 3002 -a localhost"
   },
   "dependencies": {
+    "http-server": "^0.12.0",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "react": "^16.12.0",
@@ -39,6 +41,7 @@
     "eslint": "^6.7.2",
     "fork-ts-checker-webpack-plugin": "^3.1.1",
     "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.20.0",
     "jest": "^24.9.0",
     "ts-jest": "^24.2.0",
     "ts-loader": "^6.1.0",
