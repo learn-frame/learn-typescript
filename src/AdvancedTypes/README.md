@@ -24,7 +24,7 @@
 
 - `Pick<T, K extends keyof T>`: 抽取 T 的某些属性 K, 并组成新的类型
 
-- `Record<T, K extends keyof T>`: 将指定属性的类型设置为 T
+- `Record<K extends keyof any, T>`: 将指定属性的类型设置为 T
 
 ## 条件类型
 
